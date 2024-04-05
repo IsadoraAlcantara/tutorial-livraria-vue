@@ -49,7 +49,7 @@ async function excluir(id) {
   <ul>
     <li v-for="editora in editoras" :key="editora.id">
       <span @click="editar(editora)">
-        ({{ editora.id }}) - {{ editora.nome }} - {{  editora.site }}
+        ({{ editora.id }}) - {{ editora.nome }} - {{  editora.site }} -
       </span>
       <button @click="excluir(editora.id)">X</button>
     </li>
